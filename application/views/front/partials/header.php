@@ -18,7 +18,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-danger sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="<?php echo base_url().'home/index';?>">BentoGa</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRes">
@@ -28,16 +28,16 @@
             <div class="collapse navbar-collapse " id="navbarRes">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="<?php echo base_url().'home/index';?>">Home</a>
+                        <a class="nav-link" href="<?php echo base_url().'home/index';?>">Home</a>
                     </li>
                     <?php $user = $this->session->userdata('user'); 
                     if(empty($user)) {
                     ?>
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="<?php echo base_url().'login';?>">Login</a>
+                        <a class="nav-link" href="<?php echo base_url().'login';?>">Login</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="<?php echo base_url().'singup/index'?>">Register</a>
+                        <a class="nav-link" href="<?php echo base_url().'singup/index'?>">Register</a>
                     </li>
                     <?php } else {?>
                     <li class="nav-item dropdown active">
